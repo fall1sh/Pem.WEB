@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk - Roaskop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/Icon-Beans.png" alt="Roaskop" class="logo-image"> ROASKOP
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="keranjang.html">Keranjang</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="products">
+    <h2>Our Coffee Beans</h2>
+
+    <!-- Product 1 -->
+    <div class="product-item">
+      <img src="assets/arabica.jpg" alt="Arabica Coffee Beans">
+      <h3>Arabica Coffee Beans</h3>
+      <p>Rich, aromatic, and smooth. A perfect choice for coffee enthusiasts.</p>
+      <p class="price">Rp 150,000 /kg</p>
+      <button class="btn" onclick="addToKeranjang('Arabica Coffee Beans', 150000)">Add to Keranjang</button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-item">
+      <img src="assets/robusta.jpg" alt="Robusta Coffee Beans">
+      <h3>Robusta Coffee Beans</h3>
+      <p>Stronger and bolder, ideal for those who like a kick in their cup.</p>
+      <p class="price">Rp 120,000 /kg</p>
+      <button class="btn" onclick="addToKeranjang('Robusta Coffee Beans', 120000)">Add to Keranjang</button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-item">
+      <img src="assets/decaf.jpg" alt="Decaf Coffee Beans">
+      <h3>Decaffeinated Coffee Beans</h3>
+      <p>Enjoy the rich taste of coffee without the caffeine.</p>
+      <p class="price">Rp 170,000 /kg</p>
+      <button class="btn" onclick="addToKeranjang('Decaf Coffee Beans', 170000)">Add to Keranjang</button>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-item">
+      <img src="assets/liberica.jpg" alt="Liberica Coffee Beans">
+      <h3>Liberica Coffee Beans</h3>
+      <p>Unique and smoky flavor, perfect for adventurous coffee drinkers.</p>
+      <p class="price">Rp 160,000 /kg</p>
+      <button class="btn" onclick="addToKeranjang('Liberica Coffee Beans', 160000)">Add to Keranjang</button>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product-item">
+      <img src="assets/exotic.jpg" alt="Exotic Coffee Beans">
+      <h3>Exotic Coffee Beans</h3>
+      <p>A special blend of rare beans, offering an extraordinary flavor.</p>
+      <p class="price">Rp 200,000 /kg</p>
+      <button class="btn" onclick="addToKeranjang('Exotic Coffee Beans', 200000)">Add to Keranjang</button>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product-item">
+      <img src="assets/sumatra.jpg" alt="Sumatra Coffee Beans">
+      <h3>Sumatra Coffee Beans</h3>
+      <p>Full-bodied and earthy, perfect for a strong, bold cup.</p>
+      <p class="price">Rp 180,000 /kg</p>
+      <button class="btn" onclick="addToKeranjang('Sumatra Coffee Beans', 180000)">Add to Keranjang</button>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="product-item">
+      <img src="assets/ethiopia.jpg" alt="Ethiopian Coffee Beans">
+      <h3>Ethiopian Coffee Beans</h3>
+      <p>Fruity and floral, known for its unique and bright flavors.</p>
+      <p class="price">Rp 140,000 /kg</p>
+      <button class="btn" onclick="addToKeranjang('Ethiopian Coffee Beans', 140000)">Add to Keranjang</button>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="product-item">
+      <img src="assets/kenya.jpg" alt="Kenya Coffee Beans">
+      <h3>Kenya Coffee Beans</h3>
+      <p>Intense and tangy, with a rich acidity that coffee lovers adore.</p>
+      <p class="price">Rp 190,000 /kg</p>
+      <button class="btn" onclick="addToKeranjang('Kenya Coffee Beans', 190000)">Add to Keranjang</button>
+    </div>
+
+    <!-- Product 9 -->
+    <div class="product-item">
+      <img src="assets/colombia.jpg" alt="Colombian Coffee Beans">
+      <h3>Colombian Coffee Beans</h3>
+      <p>Well-balanced with a smooth taste, ideal for any time of the day.</p>
+      <p class="price">Rp 155,000 /kg</p>
+      <button class="btn" onclick="addToKeranjang('Colombian Coffee Beans', 155000)">Add to Keranjang</button>
+    </div>
+
+    <!-- Product 10 -->
+    <div class="product-item">
+      <img src="assets/brazil.jpg" alt="Brazilian Coffee Beans">
+      <h3>Brazilian Coffee Beans</h3>
+      <p>Sweet and nutty, providing a mild yet flavorful experience.</p>
+      <p class="price">Rp 130,000 /kg</p>
+      <button class="btn" onclick="addToKeranjang('Brazilian Coffee Beans', 130000)">Add to Keranjang</button>
+    </div>
+
+    <!-- Product 11 -->
+    <div class="product-item">
+      <img src="assets/guatemala.jpg" alt="Guatemalan Coffee Beans">
+      <h3>Guatemalan Coffee Beans</h3>
+      <p>With a chocolatey richness, perfect for those who love a smoother brew.</p>
+      <p class="price">Rp 145,000 /kg</p>
+      <button class="btn" onclick="addToKeranjang('Guatemalan Coffee Beans', 145000)">Add to Keranjang</button>
+    </div>
+
+    <!-- Product 12 -->
+    <div class="product-item">
+      <img src="assets/papua.jpg" alt="Papua New Guinea Coffee Beans">
+      <h3>Papua New Guinea Coffee Beans</h3>
+      <p>Rich in flavor with a distinct earthy note, ideal for a unique cup.</p>
+      <p class="price">Rp 165,000 /kg</p>
+      <button class="btn" onclick="addToKeranjang('Papua New Guinea Coffee Beans', 165000)">Add to Keranjang</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2024 ROASKOP</p>
+    <div class="social-media">
+      <a href="#"><img src="assets/wa.png" alt="WhatsApp"></a>
+      <a href="#"><img src="assets/ig.png" alt="Instagram"></a>
+      <a href="#"><img src="assets/fb.png" alt="Facebook"></a>
+      <a href="#"><img src="assets/yt.png" alt="YouTube"></a>
+    </div>
+  </footer>
+
+  <script src="js/keranjang.js"></script>
+</body>
+</html>

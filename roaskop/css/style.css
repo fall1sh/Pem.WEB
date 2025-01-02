@@ -1,0 +1,1264 @@
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Increased padding for better spacing */
+  background-color: #333;
+  color: yellow;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo-image {
+  width: 120px;
+  margin-right: 10px; /* Increased margin for better spacing */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px; /* Increased spacing between items */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: yellow;
+  font-size: 20px; /* Adjusted font size for better balance */
+  display: block; /* Ensures the link is fully clickable */
+  padding: 10px; /* Padding for better touch area */
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  background-color: #444; /* Added background on hover for better visual feedback */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* HERO SECTION */
+.hero {
+  background-image: url('../assets/hero.png'), linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));  /* Gambar latar belakang dengan gradien hitam pekat */
+  background-size: cover;
+  background-position: center;
+  color: #FEFEFE; /* Text color set to white */
+  text-align: center;
+  padding: 100px 20px;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center content vertically */
+  position: relative;
+}
+
+/* Hero Text Container */
+.hero-text {
+  padding: 40px 30px; /* Adjusted padding for better spacing */
+  border-radius: 10px;
+  display: inline-block;
+  max-width: 80%; /* Added max-width for responsiveness */
+  color: rgb(236, 236, 236); /* Text color */
+}
+
+.hero-text h1 {
+  font-size: 36px; /* Larger font size for better readability */
+  margin-bottom: 20px; /* Increased margin for spacing */
+}
+
+.hero-text p {
+  font-size: 20px; /* Slightly larger font size */
+  line-height: 1.6;
+  margin-bottom: 20px; /* Added bottom margin */
+}
+
+/* Button Styling */
+.btn {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid yellow; /* Yellow border for button */
+  padding: 15px 30px; /* Increased padding for better button size */
+  font-size: 18px; /* Slightly larger font size */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for color */
+  text-transform: uppercase; /* Capitalize button text */
+  color: rgb(0, 0, 0); /* Text color for button */
+}
+
+.btn:hover {
+  background-color: yellow;
+  color: black; /* Text color changes to black when hovering */
+  border-color: orange; /* Border color changes to orange */
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 28px; /* Smaller font size on mobile */
+  }
+
+  .hero-text p {
+    font-size: 16px; /* Smaller font size on mobile */
+  }
+
+  .btn {
+    font-size: 16px; /* Adjust button font size on mobile */
+    padding: 12px 25px; /* Adjust padding on mobile */
+  }
+}
+
+
+/* ABOUT SECTION */
+.about {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* GALLERY SECTION */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: black;
+  text-align: center;
+}
+
+.gallery-item {
+  margin: 10px;
+}
+
+.gallery img {
+  width: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+.btn-container {
+  width: 100%; /* Full width to center the button */
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: yellow;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: orange;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer .social-media {
+  margin-top: 10px;
+}
+
+.footer .social-media a {
+  margin: 0 10px;
+}
+
+.footer .social-media img {
+  width: 50px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links li {
+    margin: 5px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .gallery img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 16px;
+  }
+
+  .hero-text {
+    padding: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 20px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .gallery img {
+    width: 120px;
+  }
+}
+
+/* ABOUT GALLERY SECTION */
+.about-gallery {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.about-gallery h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-item {
+  margin: 20px;
+}
+
+.about-item img {
+  width: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.about-item img:hover {
+  transform: scale(1.05);
+}
+
+.about-item p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* SHOP SECTION */
+.products {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.product-item {
+  display: inline-block;
+  width: 30%;
+  margin: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-item h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.product-item p {
+  font-size: 16px;
+  color: #333;
+}
+
+.product-item .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+  margin: 10px 0;
+}
+
+.product-item .btn {
+  background-color: yellow;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.product-item .btn:hover {
+  background-color: orange;
+}
+
+/* Responsive Design for Products */
+@media (max-width: 768px) {
+  .product-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-item {
+    width: 90%;
+  }
+}
+
+/* Form Login & Daftar */
+.login-form, .register-form {
+  width: 100%;
+  max-width: 400px; /* Increased max-width for a wider form */
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff; /* Changed background to match other sections */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 28px; /* Increased font size for a better heading */
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333; /* Darkened heading color for better contrast */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px; /* Adjusted font size for labels */
+  margin-bottom: 5px;
+  color: #333; /* Ensured label color matches the text */
+}
+
+input {
+  padding: 12px; /* Slightly increased padding for better input field size */
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px; /* Consistent font size */
+}
+
+button {
+  padding: 12px;
+  background-color: yellow;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px; /* Slightly larger font size for buttons */
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: orange;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments for forms */
+@media (max-width: 768px) {
+  .login-form, .register-form {
+    width: 80%; /* Adjusted width for smaller screens */
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form, .register-form {
+    width: 90%;
+    max-width: 300px; /* Even smaller width on very small screens */
+  }
+}
+
+/* KONTAK SECTION */
+.contact {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+.review-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-form label {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+  text-align: left;
+  display: block;
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.review-form textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+.review-form button {
+  background-color: yellow;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.review-form button:hover {
+  background-color: orange;
+}
+
+/* Reviews Section */
+.reviews {
+  margin-top: 40px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviews h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.review-item {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.review-item strong {
+  font-weight: bold;
+}
+
+.review-item p {
+  line-height: 1.6;
+}
+
+/* Footer Styling for Contact Page */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.footer .social-media {
+  margin-top: 10px;
+}
+
+.footer .social-media a {
+  margin: 0 10px;
+}
+
+.footer .social-media img {
+  width: 40px;
+}
+
+/* KONTAK SECTION */
+.contact {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+  height: 100vh; /* Menetapkan tinggi section ke 100vh untuk mengisi seluruh layar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Mengatur konten agar terpusat secara vertikal */
+}
+
+/* Heading */
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Paragraph */
+.contact p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+.review-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-form label {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+  text-align: left;
+  display: block;
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.review-form textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+.review-form button {
+  background-color: yellow;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.review-form button:hover {
+  background-color: orange;
+}
+
+/* Reviews Section */
+.reviews {
+  margin-top: 40px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviews h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.review-item {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.review-item strong {
+  font-weight: bold;
+}
+
+.review-item p {
+  line-height: 1.6;
+}
+
+/* Footer Styling for Contact Page */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.footer .social-media {
+  margin-top: 10px;
+}
+
+.footer .social-media a {
+  margin: 0 10px;
+}
+
+.footer .social-media img {
+  width: 40px;
+}
+
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Membuat body setinggi viewport */
+}
+
+main {
+  flex: 1; /* Membuat main konten mengambil ruang yang tersisa */
+}
+
+/* KONTAK SECTION */
+.contact {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+  flex-grow: 1; /* Membuat section kontak tumbuh dan mengisi ruang */
+}
+
+/* Heading */
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Paragraph */
+.contact p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+.review-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-form label {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+  text-align: left;
+  display: block;
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.review-form textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+.review-form button {
+  background-color: yellow;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.review-form button:hover {
+  background-color: orange;
+}
+
+/* Reviews Section */
+.reviews {
+  margin-top: 40px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviews h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.review-item {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.review-item strong {
+  font-weight: bold;
+}
+
+.review-item p {
+  line-height: 1.6;
+}
+
+/* Footer Styling for Contact Page */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto; /* Menjaga footer berada di bagian bawah */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.footer .social-media {
+  margin-top: 10px;
+}
+
+.footer .social-media a {
+  margin: 0 10px;
+}
+
+.footer .social-media img {
+  width: 40px;
+}
+
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Pastikan body mengisi seluruh tinggi layar */
+  overflow-y: auto; /* Membuat halaman dapat di-scroll secara vertikal */
+}
+
+main {
+  flex: 1; /* Konten utama akan mengambil ruang yang tersisa */
+}
+
+/* KONTAK SECTION */
+.contact {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+  flex-grow: 1; /* Membuat section kontak tumbuh dan mengisi ruang */
+}
+
+/* Heading */
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Paragraph */
+.contact p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Form Styling */
+.review-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-form label {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+  text-align: left;
+  display: block;
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.review-form textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+.review-form button {
+  background-color: yellow;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.review-form button:hover {
+  background-color: orange;
+}
+
+/* Reviews Section */
+.reviews {
+  margin-top: 40px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviews h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.review-item {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.review-item strong {
+  font-weight: bold;
+}
+
+.review-item p {
+  line-height: 1.6;
+}
+
+/* Footer Styling for Contact Page */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto; /* Menjaga footer berada di bagian bawah */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.footer .social-media {
+  margin-top: 10px;
+}
+
+.footer .social-media a {
+  margin: 0 10px;
+}
+
+.footer .social-media img {
+  width: 40px;
+}
+
+/* Responsive Design for Contact Page */
+@media (max-width: 768px) {
+  .review-form {
+    width: 80%;
+    max-width: 500px;
+  }
+
+  .reviews {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .review-form input,
+  .review-form textarea {
+    font-size: 16px;
+  }
+
+  .review-form button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-form {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .reviews {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .review-form input,
+  .review-form textarea {
+    font-size: 14px;
+  }
+
+  .review-form button {
+    font-size: 14px;
+  }
+
+  .footer .social-media img {
+    width: 35px;
+  }
+}
+
+/* Keranjang Section */
+.keranjang {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.keranjang h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.keranjang-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.keranjang-total p {
+  font-size: 22px;
+  color: #333;
+}
+
+#checkout-btn {
+  background-color: #f1c40f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#checkout-btn:hover {
+  background-color: #e67e22;
+}
+
+/* Keranjang Section */
+.keranjang {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.keranjang h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Keranjang Total */
+.keranjang-total {
+  display: flex;
+  flex-direction: column; /* Menjadikan total dan checkout berada dalam kolom */
+  align-items: flex-start;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.keranjang-total p {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 20px; /* Memberikan jarak antara total dan tombol */
+}
+
+#checkout-btn {
+  background-color: #f1c40f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Membuat tombol memanjang hingga lebar container */
+}
+
+#checkout-btn:hover {
+  background-color: #e67e22;
+}
+
+/* Keranjang Items */
+#keranjang-items {
+  margin-bottom: 40px;
+}
+
+.keranjang-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.keranjang-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.keranjang-item-details {
+  flex-grow: 1;
+  padding: 0 20px;
+}
+
+.keranjang-item-details h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.keranjang-item-details p {
+  font-size: 16px;
+  color: #333;
+}
+
+.keranjang-item-details .price {
+  color: #27ae60;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.keranjang-item .quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.keranjang-item .quantity button {
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.keranjang-item .quantity input {
+  width: 50px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.keranjang-item .remove-item {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.keranjang-item .remove-item:hover {
+  background-color: #c0392b;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer .social-media a {
+  display: block;
+  width: 30px;
+}
+
+.footer .social-media img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.footer .social-media a:hover img {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar .logo {
+    font-size: 22px;
+  }
+
+  .navbar nav ul {
+    gap: 10px;
+  }
+
+  .keranjang h2 {
+    font-size: 24px;
+  }
+
+  .keranjang-item {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .keranjang-item img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .keranjang-item-details h3 {
+    font-size: 18px;
+  }
+
+  .keranjang-total {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .keranjang-total p {
+    margin-bottom: 10px;
+  }
+}

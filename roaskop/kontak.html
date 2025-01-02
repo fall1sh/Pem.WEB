@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Roaskop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/Icon-Beans.png" alt="Roaskop" class="logo-image"> ROASKOP
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="keranjang.html">Keranjang</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>Kontak Kami</h2>
+    <p>Jika Anda ingin memberikan ulasan tentang pengalaman Anda dengan Roaskop, silakan tulis di bawah ini. Kami sangat menghargai masukan Anda!</p>
+    
+    <!-- Form untuk ulasan -->
+    <form action="submit-ulasan.php" method="POST" class="review-form">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Email Anda" required>
+
+      <label for="review">Ulasan:</label>
+      <textarea id="review" name="review" rows="5" placeholder="Tulis ulasan Anda di sini..." required></textarea>
+
+      <button type="submit" class="btn">Kirim Ulasan</button>
+    </form>
+
+    <!-- Ulasan yang sudah diterima -->
+    <section class="reviews">
+      <h3>Ulasan Pengguna</h3>
+      <div class="review-item">
+        <p><strong>John Doe:</strong> "Kopi dari Roaskop selalu menyegarkan dan memberikan pengalaman baru. Sangat puas!"</p>
+      </div>
+      <div class="review-item">
+        <p><strong>Jane Smith:</strong> "Saya suka dengan kualitas biji kopinya. Proses pemanggangan yang sempurna membuat rasa kopi sangat istimewa."</p>
+      </div>
+    </section>
+  </section>
+
+  <footer class="footer">
+    <p>© 2024 ROASKOP</p>
+    <div class="social-media">
+      <a href="#"><img src="assets/wa.png" alt="WhatsApp"></a>
+      <a href="#"><img src="assets/ig.png" alt="Instagram"></a>
+      <a href="#"><img src="assets/fb.png" alt="Facebook"></a>
+      <a href="#"><img src="assets/yt.png" alt="YouTube"></a>
+    </div>
+  </footer>
+</body>
+</html>

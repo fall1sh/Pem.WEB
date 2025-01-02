@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar - ROASKOP</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <img class="logo-image" src="assets/Icon-Beans.png" alt="Logo">
+      <span>ROASKOP</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="produk.html">Produk</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </div>
+
+  <!-- Form Daftar -->
+  <div class="register-form">
+    <h2>Daftar</h2>
+    <form action="register.php" method="POST" onsubmit="return validateForm()">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required minlength="3">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required minlength="6">
+
+      <label for="confirm-password">Ulangi Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+
+      <button type="submit" class="btn">Daftar</button>
+    </form>
+    <p>Sudah punya akun? <a href="login.html">Login di sini</a></p>
+  </div>
+
+  <!-- Memanggil File JavaScript -->
+  <script src="js/register.js"></script>
+</body>
+</html>

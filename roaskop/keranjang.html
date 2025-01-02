@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keranjang - Roaskop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/Icon-Beans.png" alt="Roaskop" class="logo-image"> ROASKOP
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="keranjang.html">Keranjang</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="keranjang">
+    <h2>Keranjang Anda</h2>
+    <div id="keranjang-items"></div> <!-- Menampilkan item keranjang -->
+    <div class="keranjang-total">
+      <p>Total: Rp <span id="total-price">0</span></p>
+      <button id="checkout-btn">Checkout</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2024 ROASKOP</p>
+    <div class="social-media">
+      <a href="#"><img src="assets/wa.png" alt="WhatsApp"></a>
+      <a href="#"><img src="assets/ig.png" alt="Instagram"></a>
+      <a href="#"><img src="assets/fb.png" alt="Facebook"></a>
+      <a href="#"><img src="assets/yt.png" alt="YouTube"></a>
+    </div>
+  </footer>
+
+  <script src="js/keranjang.js"></script>
+</body>
+</html>

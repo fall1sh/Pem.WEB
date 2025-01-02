@@ -1,0 +1,42 @@
+<!-- Halaman Login (login.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - ROASKOP</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <img class="logo-image" src="assets/Icon-Beans.png" alt="Logo">
+      <span>ROASKOP</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li> <!-- Link to Home -->
+        <li><a href="about.html">About</a></li> <!-- Link to About -->
+        <li><a href="produk.html">Produk</a></li> <!-- Link to Produk -->
+        <li><a href="login.html">Login</a></li> <!-- Link ke halaman login -->
+    </ul>
+  </div>
+
+  <!-- Form Login -->
+  <div class="login-form">
+    <h2>Login</h2>
+    <form action="login.php" method="POST"> <!-- Ubah ke login.php -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit" class="btn">Login</button>
+    </form>
+    <p>Belum punya akun? <a href="register.html">Daftar di sini</a></p> <!-- Link ke halaman daftar -->
+  </div>
+
+</body>
+</html>
